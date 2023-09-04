@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Yuks Budidaya</string>
+
+    <string name="nama_budidaya">Nama Budidaya</string>
+    <string name="deskripsi">Deskripsi</string>
+    <string name="List_Budidaya">List</string>
+    <string name="grid">Grid</string>
+    <string name="search">search</string>
+    <string name="perawatan">Perawatan</string>
+
+    <string-array name="data_budidaya">
+        <item>Tomat</item>
+        <item>Wortel</item>
+        <item>Ayam</item>
+        <item>Lele</item>
+        <item>Lebah</item>
+        <item>Kambing</item>
+        <item>Jangkrik</item>
+        <item>Bawang Merah</item>
+        <item>Sapi</item>
+        <item>Ulat Sutra</item>
+        <item>Bunga Anggrek</item>
+        <item>Ikan Nila</item>
+        <item>Belut</item>
+        <item>Udang Air Tawar</item>
+        <item>Katak</item>
+        <item>Kopi</item>
+    </string-array>
+
+    <string-array name="data_description">
+        <item>Tomat adalah tanaman sayuran yang umum dibudidayakan untuk buahnya yang berwarna merah. Buah tomat digunakan dalam berbagai masakan, salad, dan produk olahan.</item>
+        <item>Wortel adalah sayuran akar yang memiliki warna oranye yang khas. Wortel digunakan dalam masakan, salad, jus, dan camilan.</item>
+        <item>Ayam adalah unggas yang umumnya dipelihara untuk daging dan telur. Ada berbagai jenis ayam, termasuk ayam broiler (daging) dan ayam petelur (telur).</item>
+        <item>Lele adalah ikan air tawar yang umumnya dibudidayakan untuk dagingnya. Lele memiliki pertumbuhan cepat dan dapat tumbuh dalam kolam atau tangki.</item>
+        <item>Lebah madu adalah serangga yang menghasilkan madu dan lilin lebah. Mereka penting untuk penyerbukan tanaman.</item>
+        <item>Kambing adalah hewan ternak yang biasanya dipelihara untuk daging, susu, dan wol. Ada berbagai jenis kambing, termasuk kambing Boer dan kambing Angora.</item>
+        <item>Jangkrik adalah serangga yang sering digunakan sebagai pakan hewan peliharaan dan untuk produksi suara jangkrik yang digunakan dalam pertunjukan.</item>
+        <item>Bawang merah adalah tanaman umbi yang umum digunakan sebagai bumbu dalam masakan. Bawang merah memiliki rasa yang kuat dan aroma yang khas.</item>
+        <item>Sapi adalah hewan ternak yang biasanya dipelihara untuk daging dan susu. Sapi memiliki berbagai jenis, termasuk sapi sapi perah dan sapi daging.</item>
+        <item>Ulat sutra adalah larva dari kupu-kupu sutra dan menghasilkan sutra alami yang digunakan dalam industri tekstil.</item>
+        <item>Anggrek adalah tanaman hiasan yang memiliki berbagai macam varietas dan warna bunga yang indah.</item>
+        <item>Ikan nila adalah ikan air tawar yang sering dibudidayakan untuk dagingnya. Ikan nila mudah dipelihara dan tahan terhadap berbagai kondisi air.</item>
+        <item>Belut adalah ikan air tawar yang memiliki bentuk tubuh panjang dan silindris. Mereka sering digunakan dalam hidangan kuliner tertentu.</item>
+        <item>Udang air tawar adalah hewan air yang dapat dibudidayakan untuk dagingnya. Ada berbagai jenis udang air tawar yang dapat dipilih.</item>
+        <item>Katak adalah amfibi yang dapat dibudidayakan untuk tujuan penelitian, peliharaan, atau bahkan konsumsi makanan tertentu.</item>
+        <item>Tanaman kopi adalah tanaman budidaya yang menghasilkan biji kopi yang digunakan dalam pembuatan minuman kopi.</item>
+    </string-array>
+
+    <integer-array name="data_imagebudidaya">
+        <item>@drawable/tomat</item>
+        <item>@drawable/wortel</item>
+        <item>@drawable/ayam</item>
+        <item>@drawable/lele</item>
+        <item>@drawable/lebah</item>
+        <item>@drawable/kambing</item>
+        <item>@drawable/jangkrik</item>
+        <item>@drawable/bawang_merah</item>
+        <item>@drawable/sapi</item>
+        <item>@drawable/ulat_sutra</item>
+        <item>@drawable/bunga_anggrek</item>
+        <item>@drawable/ikan_nila</item>
+        <item>@drawable/belut</item>
+        <item>@drawable/udang</item>
+        <item>@drawable/katak</item>
+        <item>@drawable/kopi</item>
+    </integer-array>
+</resources>
