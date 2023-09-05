@@ -7,6 +7,15 @@
     <string name="grid">Grid</string>
     <string name="search">search</string>
     <string name="perawatan">Perawatan</string>
+    <string name="jenis">Jenis</string>
+    <string name="jenis_detail">jenis_detail</string>
+    <string name="habitat">Habitat</string>
+    <string name="nama_latin">nama_latin</string>
+    <string name="nama_latin_detail">Nama Latin</string>
+    <string name="share">Share</string>
+    <string name="my_name">Bobby Saputra</string>
+    <string name="about">about</string>
+    <string name="bobby_saputra">Bobby Saputra</string>
 
     <string-array name="data_budidaya">
         <item>Tomat</item>
@@ -25,6 +34,44 @@
         <item>Udang Air Tawar</item>
         <item>Katak</item>
         <item>Kopi</item>
+    </string-array>
+
+    <string-array name="data_perawatan">
+        <item>Tomat memerlukan sinar matahari yang cukup, penyiraman teratur, dan tanah yang subur. Dapat ditanam di kebun atau pot.</item>
+        <item>Wortel memerlukan tanah yang dalam, gembur, dan bebas batu. Tanam wortel pada musim yang tepat dan pastikan penyiraman teratur.</item>
+        <item>Ayam memerlukan kandang yang aman, pakan berkualitas, air bersih, dan perawatan kesehatan yang baik.</item>
+        <item>Lele memerlukan air bersih, pakan yang berkualitas, dan suhu air yang sesuai.</item>
+        <item>Lebah memerlukan sarang yang baik, pakan sumber nectar, dan perawatan yang cermat.</item>
+        <item>Kambing memerlukan kandang yang aman, pakan berkualitas, air bersih, dan perawatan kesehatan yang baik.</item>
+        <item>Jangkrik dapat ditempatkan dalam wadah dengan pakan dan air, serta suhu yang sesuai.</item>
+        <item>Bawang merah memerlukan tanah yang gembur, penyiraman teratur, dan perlindungan dari hama.</item>
+        <item>Sapi memerlukan lahan hijau yang cukup, pakan berkualitas, perawatan kesehatan, dan kandang yang aman.</item>
+        <item>Ulat sutra diberi makan dengan daun murbei dan memerlukan kondisi yang terkontrol.</item>
+        <item>Anggrek memerlukan perawatan khusus, termasuk penyiraman yang tepat, cahaya yang cukup, dan suhu yang sesuai.</item>
+        <item>Ikan nila memerlukan kolam atau tangki air bersih, pakan yang baik, dan pemantauan suhu air yang sesuai.</item>
+        <item>Belut dapat dibudidayakan di kolam air tawar dengan perawatan yang sederhana.</item>
+        <item>Udang air tawar memerlukan kolam air bersih, pakan yang berkualitas, dan kondisi air yang terkontrol.</item>
+        <item>Katak memerlukan lingkungan yang sesuai dengan kebutuhan air dan perawatan yang tepat.</item>
+        <item>Tanaman kopi memerlukan tanah yang subur, iklim yang sesuai, dan pemeliharaan yang baik.</item>
+    </string-array>
+
+    <string-array name="data_jenis">
+        <item>Tanaman</item>
+        <item>Tanaman</item>
+        <item>Hewan</item>
+        <item>Ikan</item>
+        <item>Hewan</item>
+        <item>Hewan</item>
+        <item>Hewan</item>
+        <item>Tanaman</item>
+        <item>Hewan</item>
+        <item>Hewan</item>
+        <item>Tanaman</item>
+        <item>Ikan</item>
+        <item>Ikan</item>
+        <item>Hewan</item>
+        <item>Hewan</item>
+        <item>Tanaman</item>
     </string-array>
 
     <string-array name="data_description">
@@ -46,6 +93,25 @@
         <item>Tanaman kopi adalah tanaman budidaya yang menghasilkan biji kopi yang digunakan dalam pembuatan minuman kopi.</item>
     </string-array>
 
+    <string-array name="habitat_detail">
+        <item>Tanaman tomat tumbuh subur di iklim yang hangat dengan sinar matahari penuh. Mereka biasanya ditanam di tanah subur yang memiliki drainase baik.</item>
+        <item>Wortel tumbuh dengan baik di tanah yang dalam, bebas bebatuan, dan subur. Mereka biasanya tumbuh dengan baik di daerah beriklim hangat.</item>
+        <item>Ayam adalah hewan yang biasanya dipelihara dalam kandang atau peternakan ayam. Mereka memerlukan kandang yang aman dari predator dan cuaca yang buruk.</item>
+        <item>Lele adalah ikan air tawar yang dapat hidup di berbagai jenis perairan seperti kolam, sungai, dan tambak. Mereka membutuhkan air yang bersih dan teroksidasi dengan baik.</item>
+        <item>Lebah biasanya hidup di sarang atau kotak lebah yang ditempatkan di dekat tanaman berbunga. Mereka mengumpulkan nektar dan serbuk sari dari bunga-bunga di sekitar lingkungan mereka.</item>
+        <item>Kambing adalah hewan yang biasanya dipelihara di peternakan atau kandang. Mereka memerlukan kandang yang aman, air bersih, makanan berkualitas, dan perawatan kesehatan yang baik.</item>
+        <item>jangkrik biasanya hidup di wadah atau kandang yang sesuai dengan suhu dan kelembaban yang diperlukan. Mereka dapat ditempatkan di dalam ruangan.</item>
+        <item>Bawang merah tumbuh dengan baik di tanah yang gembur dan subur. Mereka biasanya ditanam di daerah beriklim hangat.</item>
+        <item>Sapi biasanya dipelihara di padang rumput yang luas atau peternakan sapi. Mereka memerlukan akses ke padang rumput yang cukup, air bersih, makanan berkualitas, dan perawatan kesehatan yang baik.</item>
+        <item>Ulat sutra hidup pada daun murbei. Mereka tumbuh di peternakan sericulture yang memiliki kondisi lingkungan yang sesuai.</item>
+        <item>Anggrek biasanya tumbuh di hutan tropis yang lembab. Mereka tumbuh di atas pohon atau di dalam lingkungan yang memiliki kelembaban tinggi.</item>
+        <item>Ikan nila hidup di perairan tawar seperti kolam, tambak, dan sungai. Mereka membutuhkan air yang bersih dan hangat.</item>
+        <item>Belut hidup di dasar perairan seperti lumpur atau pasir di danau, sungai, atau kolam. Mereka menggali lubang sebagai tempat bersembunyi.</item>
+        <item>Udang air tawar hidup di berbagai jenis perairan tawar seperti kolam, sungai, dan tambak. Mereka memerlukan air yang bersih dan beroksigenasi baik.</item>
+        <item>Katak hidup di perairan seperti kolam, danau, atau sungai. Mereka mencari tempat berlindung di dekat air.</item>
+        <item>Tanaman kopi tumbuh di dataran tinggi dengan iklim tropis yang hangat dan hujan yang cukup. Mereka biasanya ditanam di kebun kopi.</item>
+    </string-array>
+
     <integer-array name="data_imagebudidaya">
         <item>@drawable/tomat</item>
         <item>@drawable/wortel</item>
@@ -64,4 +130,23 @@
         <item>@drawable/katak</item>
         <item>@drawable/kopi</item>
     </integer-array>
+
+    <string-array name="data_namaLatin">
+        <item>Solanum l.sicum</item>
+        <item>Daucus carota</item>
+        <item>galus domestikus</item>
+        <item>Clarias gariepinus</item>
+        <item>Apis mellifera</item>
+        <item>Capra aegagrus</item>
+        <item>Gryllidae</item>
+        <item>Allium cepa</item>
+        <item>Bos taurus</item>
+        <item>Bombyx mori</item>
+        <item>Phalaenopsis spp</item>
+        <item>Oreochromis</item>
+        <item>Anguilla spp</item>
+        <item>Macrobrachium</item>
+        <item>Anura</item>
+        <item>Coffea spp</item>
+    </string-array>
 </resources>

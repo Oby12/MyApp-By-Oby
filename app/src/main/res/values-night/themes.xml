@@ -3,5 +3,7 @@
     <style name="Base.Theme.MyAppByOby" parent="Theme.Material3.DayNight">
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorPrimaryVariant">@color/warnaNotf</item>
     </style>
 </resources>

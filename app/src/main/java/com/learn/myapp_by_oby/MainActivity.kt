@@ -3,6 +3,9 @@ package com.learn.myapp_by_oby
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
+import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.widget.SearchView
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -16,6 +19,9 @@ class MainActivity : AppCompatActivity() {
     //penggunaan search view
     private lateinit var searchview : SearchView
     private lateinit var adapter: BudidayaAdapter
+
+    //btn_share
+    /*private lateinit var btnShare : Button*/
 
     companion object{
         val INTENT_PARCELABLE = "OBJECT_INTENT"
@@ -32,6 +38,8 @@ class MainActivity : AppCompatActivity() {
         showRecyleViewBudidaya()
         adapter = BudidayaAdapter(ListBudidaya)
         rv_budidaya_tanaman.adapter = adapter
+
+
 
         searchview.setOnQueryTextListener(object : SearchView.OnQueryTextListener{
             override fun onQueryTextSubmit(query: String?): Boolean {
@@ -50,6 +58,8 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("budidayaku",it)
             startActivity(intent)
         }
+
+
     }
 
     private fun filterList(query : String?){
@@ -75,9 +85,14 @@ class MainActivity : AppCompatActivity() {
         val namabudidaya = resources.getStringArray(R.array.data_budidaya)
         val deskripsiBudidaya = resources.getStringArray(R.array.data_description)
         val imageBudidaya = resources.obtainTypedArray(R.array.data_imagebudidaya)
+        val perawatan = resources.getStringArray(R.array.data_perawatan)
+        val jenis = resources.getStringArray(R.array.data_jenis)
+        val habitatku = resources.getStringArray(R.array.habitat_detail)
+        val namaLatinku = resources.getStringArray(R.array.data_namaLatin)
+
         val listBudidayaOby = ArrayList<Budidaya>()
         for (i in namabudidaya.indices){
-            val budidayaku = Budidaya(namabudidaya[i],deskripsiBudidaya[i],imageBudidaya.getResourceId(i,2))
+            val budidayaku = Budidaya(namabudidaya[i],deskripsiBudidaya[i],perawatan[i],jenis[i],habitatku[i],namaLatinku[i],imageBudidaya.getResourceId(i,2))
             ListBudidaya.add(budidayaku)
         }
         return listBudidayaOby
@@ -87,5 +102,21 @@ class MainActivity : AppCompatActivity() {
         rv_budidaya_tanaman.layoutManager = LinearLayoutManager(this)
         val ListBudidayaAdapter = BudidayaAdapter(ListBudidaya)
         rv_budidaya_tanaman.adapter = ListBudidayaAdapter
+    }
+    //fungsi menu
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_main, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item.itemId){
+            R.id.action_sear ->{
+                val btnAbout = Intent(this@MainActivity, ActivityAbout::class.java)
+                startActivity(btnAbout)
+                return true
+            }
+            else -> return super.onOptionsItemSelected(item)
+        }
     }
 }

@@ -18,6 +18,7 @@ class BudidayaAdapter(private var ListBudidaya : ArrayList<Budidaya>) : Recycler
         val imgbudidaya : ImageView =itemView.findViewById(R.id.img_item_budidaya)
         val namaBudidaya : TextView = itemView.findViewById(R.id.tv_item_name_tanaman)
         val deskripsiTanaman : TextView = itemView.findViewById(R.id.tv_item_description)
+
     }
 
     fun setFilterList(ListBudidaya:ArrayList<Budidaya>){
@@ -33,10 +34,11 @@ class BudidayaAdapter(private var ListBudidaya : ArrayList<Budidaya>) : Recycler
     override fun getItemCount(): Int =ListBudidaya.size
 
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
-        val (name, description, image) = ListBudidaya[position]
-        holder.imgbudidaya.setImageResource(image)
+        val (name, description,perawatan,jenis,habitat,namaLatin,image) = ListBudidaya[position]
         holder.namaBudidaya.text =name
         holder.deskripsiTanaman.text = description
+        holder.imgbudidaya.setImageResource(image)
+
 
         //pembuatan detail
         holder.itemView.setOnClickListener {

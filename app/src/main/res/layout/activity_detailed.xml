@@ -4,20 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     tools:context=".detailedActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ImageView
+        <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/image_detail"
-            android:layout_width="0dp"
+            android:layout_width="200dp"
             android:layout_height="200dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
             android:scaleType="centerCrop"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            card_view:shapeAppearanceOverlay="@style/roundedSquare"
             tools:srcCompat="@tools:sample/avatars" />
 
         <TextView
@@ -26,12 +29,64 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="TextView"
-            android:textSize="18sp"
-            android:textStyle="bold"
+            android:textSize="29sp"
+            android:textStyle="bold|italic"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/image_detail" />
 
+
+        <TextView
+            android:id="@+id/text_nama_latin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/nama_latin_detail"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="@+id/image_detail"
+            app:layout_constraintStart_toEndOf="@+id/image_detail"
+            app:layout_constraintTop_toBottomOf="@+id/jenis_detail"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="@string/jenis"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="@+id/image_detail"
+            app:layout_constraintStart_toEndOf="@+id/image_detail"
+            app:layout_constraintTop_toTopOf="@+id/image_detail"
+            app:layout_constraintVertical_bias="0.202" />
+
+        <TextView
+            android:id="@+id/jenis_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/jenis_detail"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/tv_text_nama_latin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="76dp"
+            android:text="@string/nama_latin"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/text_nama_latin"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/text_nama_latin"
+            app:layout_constraintTop_toBottomOf="@+id/text_nama_latin" />
 
         <TextView
             android:id="@+id/textViewDetail"
@@ -40,7 +95,7 @@
             android:layout_marginStart="24dp"
             android:layout_marginTop="16dp"
             android:text="@string/deskripsi"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:textStyle="bold|italic"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_item_name_detail" />
@@ -50,14 +105,16 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginEnd="24dp"
             android:layout_marginBottom="32dp"
             android:text="TextView"
+            android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textViewDetail" />
+            app:layout_constraintTop_toBottomOf="@+id/textViewDetail"
+            app:layout_constraintVertical_bias="0.038" />
 
         <TextView
             android:id="@+id/tv_perawatan_detail"
@@ -66,7 +123,7 @@
             android:layout_marginStart="24dp"
             android:layout_marginTop="16dp"
             android:text="@string/perawatan"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:textStyle="bold|italic"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_item_description_detail" />
@@ -76,14 +133,56 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginEnd="24dp"
             android:layout_marginBottom="32dp"
             android:text="TextView"
+            android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_perawatan_detail" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_perawatan_detail"
+            app:layout_constraintVertical_bias="0.079" />
+
+        <TextView
+            android:id="@+id/tv_Habitat_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/habitat"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_perawatan" />
+
+        <TextView
+            android:id="@+id/tv_text_habitat_detail_lengkap"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="32dp"
+            android:text="@string/habitat"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_share"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_Habitat_detail"
+            app:layout_constraintVertical_bias="0.01999998" />
+
+        <Button
+            android:id="@+id/btn_share"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:text="@string/share"
+            app:layout_constraintEnd_toEndOf="@+id/tv_text_habitat_detail_lengkap"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="@+id/tv_text_habitat_detail_lengkap"
+            app:layout_constraintTop_toBottomOf="@+id/tv_text_habitat_detail_lengkap" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
